@@ -1,0 +1,4 @@
+<!--pages/swiperdetail/swiperdetail.wxml-->
+<view class="swiperdetailcontainer">
+	<text>这里是{{detailitem.content}}</text>
+</view>

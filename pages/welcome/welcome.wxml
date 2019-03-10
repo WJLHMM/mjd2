@@ -1,0 +1,7 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="welcontainer">
+  <image class="welimg" src="/images/wow1.jpg"></image>
+  <view class="welusermotto">
+    <text class="welbtn">欢迎光临！ 即將進入主頁Loadig......</text>
+  </view>
+</view>

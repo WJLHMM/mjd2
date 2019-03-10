@@ -1,0 +1,5 @@
+<!--pages/advdetail/advdetail.wxml-->
+<view class="advdetailblock">
+  <text class="advdetailblocktx">这里是主打广告位置</text>
+</view>
+

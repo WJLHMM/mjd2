@@ -1,0 +1,112 @@
+<!--index.wxml-->
+<view class="indcontainer">
+    <view class="indswpier">
+	  	<swiper class="indswpier1" autoplay="true" indicator-dots="true">
+	  		<block wx:for="{{mjJdIndexJson.data.indswpier}}" wx:key="*this">
+			    <swiper-item catchtap="Toswiperdetail" data-swiperId="{{item.id}}">
+			      <image src="{{item.imgUrl}}" class="slide-image" />
+			    </swiper-item> 
+			</block>
+		  <!--  -->
+		</swiper>
+    </view>
+    <view class="indbrandshow" catchtap="Toadvdetail">
+	  	<view class="indbrandshow1">
+	  		<view class="indbrandshow1img1" wx:for="{{mjJdIndexJson.data.indbrandshow}}" wx:key="*this">
+	  			<image src="{{item.imgUrl}}" class="brandshowimg"/>
+	  		</view>
+	
+	  	</view>
+	  	<view class="indbrandshow2">
+	  		<view class="indbrandshow2img1">
+	  			<image src="https://m.360buyimg.com/mobilecms/s750x230_jfs/t1/21479/21/4911/48057/5c35b55aE3faf9dd0/d7c425cce2bdffb7.png!q70.jpg.dpg" class="brandshowimg2"/>
+	  		</view>
+	  	</view>
+    </view>
+    <view class="boxlist">
+	  	<view class="boxlistitem" wx:for="{{mjJdIndexJson.data.boxlist}}" wx:key="*this" data-listname="{{item.title}}" catchtap="Tolistdetail">
+	  		<image src="{{item.imgUrl}}" class="boxlistimg"/>
+	  	 	<text>{{item.title}}</text>
+	  	</view>
+ 	</view>
+	<view class="indscrollnews">
+	    <view class="indscrollnewsimg1">
+			<image class="indscrollnewsimg11" src="https://m.360buyimg.com/mobilecms/jfs/t14752/82/2574581467/6535/c8158ace/5aa8935bN94e31ff6.jpg.dpg"></image>
+	    </view>
+	    <view class="indscrollnewsswiper">
+	        <swiper class="indscrollnewsswiper1" autoplay="true" vertical="true">
+	        	<block wx:for="{{mjJdIndexJson.data.indscrollnewstext}}" wx:key="*this">
+			        <swiper-item>
+				        <text class="swipertext1">{{item.text1}}</text>
+				        <text class="swipertext2">{{item.text2}}</text>
+			        </swiper-item>
+			  	</block>
+	      </swiper>
+	    </view>
+	    <text class="indscrollnewstext1">|</text>
+	    <text class="indscrollnewstext2">更多</text>
+    </view>
+    <view class="nmchanel">
+	  	<view class="nmimg1">
+			<image src="https://m.360buyimg.com/mobilecms/jfs/t1/24056/17/2005/80908/5c186655E14dc7cf2/820a7029a2540e25.jpg!q70.jpg.dpg" class="nmimg11"></image>
+		</view>
+		<view class="nmimg2">
+		    <image src="https://m.360buyimg.com/mobilecms/jfs/t1/26685/26/1930/47992/5c186663Ee07857b2/533b3a90ad7aa17b.jpg!q70.jpg.dpg" class="nmimg21"></image>
+		</view>
+		<view class="nmimg3">
+		    <image src="https://m.360buyimg.com/mobilecms/jfs/t1/27089/22/2030/53621/5c186677Ebbaa20af/bd39d47042dccbaf.jpg!q70.jpg.dpg" class="nmimg31"></image>
+		</view>
+    </view>
+    <view class="sksection">
+	    <view class="sksectionleft">
+	      <text class="sksectionlefttext1">京东秒杀</text>
+	      <text class="sksectionlefttext2">10点场</text>
+	      <view class="skhour">10</view>
+	      <view class="skmin">11</view>
+	      <view class="sksec">12</view>
+	    </view>
+	    <view class="sksectionright">
+	      <text>更多秒殺</text>
+	      <!-- <image></image> -->
+	    </view>
+    </view>
+    <view class='skpro'>
+	    <view class="skprolist" wx:for="{{mjJdIndexJson.data.sksection}}" wx:key="*this">
+	    	<view class="skprolistitem">
+	      		<image src="{{item.imgUrl}}"></image>
+	    	</view>
+		    <view class="cprice">￥{{item.cprice}}</view>
+		    <view class="oprice">￥{{item.cprice}}</view>
+	    </view> 
+	  
+	</view>
+	<view class="newyearbordstart">
+		<image class="newyearbordstartimg" src="https://m.360buyimg.com/mobilecms/s750x230_jfs/t1/14575/13/4901/163912/5c3714a2E76dda0ae/ed5c662135d0e803.jpg!q70.jpg.dpg"/>
+	</view>
+	<view class="newyearbordpro">
+		<view class="newyearbordproitem" wx:for="{{mjJdIndexJson.data.newyearprolist}}" wx:key="*this">
+			<view class="itempiccon">
+				<image class="itempic" src="{{item.imgUrl}}"/>
+			</view>
+			<view class="proname">{{item.proname}}</view>
+			<view class="protast">{{item.protast}}</view>
+		</view>
+	</view>
+	<view class="newyearboardend">
+		<image class="newyearboardendimg" src="https://m.360buyimg.com/mobilecms/s750x80_jfs/t1/19472/2/4634/15984/5c32cd63Ebabc1172/a8ffa02e89a93ab6.png!q70.jpg.dpg"/>
+	</view>
+	<view class="newyearbordpro2">
+		<view 
+			class="newyearbordproitem newyearbordproitem0" 
+			wx:for="{{mjJdIndexJson.data.newyearprolist2}}" 
+			wx:key="*this"
+			style="background:url('{{item.imgUrlbg}}');background-size: contain;background-position:center center"
+		>
+			<view class="itempiccon">
+				<image class="itempic" src="{{item.imgUrl}}"/>
+			</view>
+			<view class="proname">{{item.proname}}</view>
+			<view class="protast">{{item.protast}}</view>
+		</view>
+	</view>
+</view>

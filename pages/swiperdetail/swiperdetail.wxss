@@ -1,0 +1,15 @@
+/* pages/swiperdetail/swiperdetail.wxss */
+.swiperdetailcontainer {
+	width:100%;
+	margin-top:400rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+}
+
+text {
+	font-size:40rpx;
+	color:red;
+	font-weight:bold;
+}

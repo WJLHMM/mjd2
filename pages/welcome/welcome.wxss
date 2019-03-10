@@ -1,0 +1,31 @@
+/* pages/welcome/welcome.wxss */
+.welcontainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.welimg {
+  height: 200rpx;
+  width: 60%;
+  border-radius:10rpx；
+}
+.welusermotto {
+	 border: 1px solid #7E0AFA;
+	 width:60%;
+	 height: 80rpx;
+	 text-align: center;
+	 border-radius: 5px;
+	 margin:100rpx auto 0 auto;
+	 padding:2rpx 10rpx;
+}
+.welbtn{
+	 font-size: 30rpx;
+	 font-family: MicroSoft Yahei;
+	 font-weight: bold;
+	 line-height: 80rpx;
+	 color:#7E0AFA;
+}
